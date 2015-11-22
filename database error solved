@@ -1,0 +1,8 @@
+	$myhost = "localhost:3306";
+		$dbuser = "root";
+		$dbpass = "";
+		$dbname = "employee_record";
+		$dbname = "projectdb (1)";
+	
+		$connect = mysql_connect( $myhost, $dbuser, $dbpass ) or
+			die("Could not connect <br />" . mysql_error());
