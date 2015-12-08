@@ -12,7 +12,7 @@
 </div>
 <br>
 <?php
-$database='projectdb';
+$database='projectdb (01)';
 
 			$Id_num = $_POST['Id_num'];
 			$Lastname = $_POST['Lastname'];
