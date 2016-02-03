@@ -1,0 +1,9 @@
+@@ -6,7 +6,7 @@
+<br>
+<div id="wrap">
+		<div id="menu">
+			<h3 align="center"><a href="HOMES.php">BACK</a> <br>
+			<h3 align="center"><a href="option1.php">BACK</a> <br>
+
+</div>
+<?php
