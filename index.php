@@ -37,51 +37,13 @@
 <div id="wrapper">
 
 <?php include('header.php'); ?>
-
-<marquee>
-<h1> WELCOME to Administrative Login </h1>
-</marquee>
-
-
-
-	
-<ul>
- <br>
- <br>
-	<div id = "login-form">
-		<form method = "post" name = "login" action = "HOME.php">
-			<ul id = "form">
-				<li class = "label">
-					Username:
-				</li>
-				<li>
-					<input class = "data" type = "text" id = "username" name = "user" placeholder = "Your Username here" />
-				</li>
-				
-				<li class = "label">
-					Password:
-				</li>
-				<li>
-					<input class = "data" type = "password" id = "password" name = "pass" placeholder = "" />
-				</li>
-
-				<li>
-					<input class = "button"  type = "submit" name = "login" value = "Login" />
-					
-
-				</li>
-			</ul>
-		</form>
-	</div>
-	
-<?php
-
-echo "<b><h3>Today is:\n";
-echo date("m/d/Y") . "<br />";?>
-<br>
-
-<div id="clockDisplay" class="clockStyle"></div>
-<script type="text/javascript" language="javascript">
+<table width="962" height="409" border="0.5">
+  <tr>
+    <td width="952"><marquee>
+    <h1>WELCOME to Administrative Login </h1>
+    </marquee>
+      <div id="clockDisplay" class="clockStyle"></div>
+<script type="text/javascript" language="JavaScript">
 function renderTime() {
 	var currentTime = new Date();
 	var diem = "AM";
@@ -110,24 +72,38 @@ function renderTime() {
 }
 renderTime();
 </script>
+<ul>
+<?php
 
-
-
-
+echo "<b><h3>Today is:\n";
+echo date("m/d/Y") . "<br />";?>
+<br />
+<br />
+<div id = "login-form">
+  <form action = "HOME.php" method = "post" name = "login" id="login">
+    <ul id = "form">
+      <li class = "label"> Username: </li>
+      <li>
+        <input class = "data" type = "text" id = "username" name = "user" placeholder = "Your Username here" />
+      </li>
+      <li class = "label"> Password: </li>
+      <li>
+        <input class = "data" type = "password" id = "password" name = "pass" placeholder = "" />
+      </li>
+      <li>
+        <input class = "button"  type = "submit" name = "login" value = "Login" />
+      </li>
+    </ul>
+  </form>
+</div>
+<br />
 <?php include('footer.php'); ?>
+</div></td>
+  </tr>
+</table>
 
-		</div> <!-- End #wrapper -->
-
-
-
-
-
-
-
-
-
-
-	
-	
-
-	
+<marquee>
+<h1>
+  <!-- End #wrapper -->
+</h1>
+</marquee>
