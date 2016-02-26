@@ -40,10 +40,12 @@
 <table width="962" height="409" border="0.5">
   <tr>
     <td width="952"><marquee>
-    <h1>WELCOME to Administrative Login </h1>
+    <h3 align="center">WELCOME to Administrative Login </h3>
     </marquee>
       <div id="clockDisplay" class="clockStyle"></div>
-<script type="text/javascript" language="JavaScript">
+      
+      <div align="left">
+        <script type="text/javascript" language="JavaScript">
 function renderTime() {
 	var currentTime = new Date();
 	var diem = "AM";
@@ -71,33 +73,30 @@ function renderTime() {
 	myClock.innerText = h + ":" + m + ":" + s + " " + diem;
 }
 renderTime();
-</script>
-<ul>
-<?php
+  </script>
+        <?php
 
 echo "<b><h3>Today is:\n";
 echo date("m/d/Y") . "<br />";?>
-<br />
-<br />
-<div id = "login-form">
+        <br />
+        <br />
+      </div>
+      <div id = "login-form">
   <form action = "HOME.php" method = "post" name = "login" id="login">
-    <ul id = "form">
-      <li class = "label"> Username: </li>
-      <li>
-        <input class = "data" type = "text" id = "username" name = "user" placeholder = "Your Username here" />
-      </li>
-      <li class = "label"> Password: </li>
-      <li>
-        <input class = "data" type = "password" id = "password" name = "pass" placeholder = "" />
-      </li>
-      <li>
-        <input class = "button"  type = "submit" name = "login" value = "Login" />
-      </li>
-    </ul>
+    <div align="justify"></div>
+    <table width="200" border="0" align="center">
+      <tr>
+        <td>Username:
+          <input class = "data" type = "text" id = "username" name = "user" placeholder = "Your Username here" />
+          Password:
+          <input class = "data" type = "password" id = "password" name = "pass" placeholder = "" />          <input class = "button"  type = "submit" name = "login" value = "Login" />        </td>
+      </tr>
+    </table>
+    <h3>&nbsp;      </h3>
+    <h6 align="center">&nbsp;</h6>
   </form>
-</div>
-<br />
-<?php include('footer.php'); ?>
+  <div align="center"><strong>Copyright © 2012</strong> @ Manila City Hotel </div>
+      </div>
 </div></td>
   </tr>
 </table>
