@@ -29,6 +29,7 @@
 	letter-spacing: 2px;
 	display:inline;
 }
+.style1 {font-size: 18px}
 </style>
 
 
@@ -37,8 +38,12 @@
 <div id="wrapper">
 
 <?php include('header.php'); ?>
+ <?php
 
-<marquee>
+echo "<b><h3>Today is:\n";
+echo date("m/d/Y") . "<br />";?>
+
+ <marquee>
 <h1> What do you want to do? </h1>
 </marquee>
 
@@ -51,22 +56,19 @@
 	
 <div id="wrap">
 		<div id="menu">
-			<h3 align="center"><a href="1.php">Register New Employee</a><br>
-			<a href="5.php">SEARCH Record</a><br>
-			<a href="7.php">UPDATE Record</a></h3>
+			<h3 align="center"><span class="style1"><a href="1.php">Register New Employee</a><br>
+			    <a href="5.php">SEARCH Record</a><br>
+			    <a href="7.php">UPDATE Record</a></span></h3>
 			
 </div>
 
 
 	
-<?php
-
-echo "<b><h3>Today is:\n";
-echo date("m/d/Y") . "<br />";?>
 <br>
 
 <div id="clockDisplay" class="clockStyle"></div>
-<script type="text/javascript" language="javascript">
+<div align="center">
+  <script type="text/javascript" language="javascript">
 function renderTime() {
 	var currentTime = new Date();
 	var diem = "AM";
@@ -95,13 +97,14 @@ function renderTime() {
 }
 renderTime();
 </script>
-
-
-
-
-<?php include('footer.php'); ?>
-
-		</div> <!-- End #wrapper -->
+  
+  
+  
+  
+  <?php include('footer.php'); ?>
+  
+</div>
+</div> <!-- End #wrapper -->
 
 
 
