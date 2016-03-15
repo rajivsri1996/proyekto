@@ -59,8 +59,14 @@ echo date("m/d/Y") . "<br />";?>
 			<h3 align="center"><span class="style1"><a href="1.php">Register New Employee</a><br>
 			    <a href="5.php">SEARCH Record</a><br>
 			    <a href="7.php">UPDATE Record</a></span></h3>
-			
+			<a href="HOMES.php">Back To Home Page</a>
 </div>
+
+
+	
+	
+
+	
 
 
 	
