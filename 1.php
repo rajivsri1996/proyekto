@@ -43,6 +43,15 @@ else
 <br>
 <br>
 <h1 align=center><font color='black' size=10><b>ADD NEW EMPLOYEE</font></h1>
+
+<div id="wrap">
+<div id="menu">
+  <h3 align="center"><span class="style1"><a href="5.php">SEARCH Record</a><br>
+  <a href="7.php">UPDATE Record</a></span></h3>
+			<h3 align="center"><a href="HOMES.php"><strong>Back To Home Page</strong></a> </h3>
+			<div align="center"></div>
+</div>
+
 <div id="wrap">
 		<div id="menu">
 			<h3 align="center"><a href="option1.php">BACK</a><br>
@@ -57,7 +66,8 @@ else
 			<center><form action="adding.php" method="POST">
 			<br><font face= "Candara" size= "5" color= "lime">
 			&nbsp&nbsp&nbsp&nbsp&nbsp Employee Form ID:<input type="text"name="Id_num"  onKeyPress="return numbersonly(this, event)" MAXLENGTH = 3> &nbsp&nbsp&nbsp&nbsp&nbsp <br><br>
-			Last Name: <INPUT style="Text" name="Lastname"><BR/><BR/>
+			Last Name: 
+			<INPUT style="Text" name="Lastname"><BR/><BR/>
 			First Name: <INPUT style="Text" name="Firstname"><BR/><BR/>
 			Middle Name: <INPUT style="Text" name="Middlename"><BR/><BR/>
 			Address: <INPUT style="Text" name="Address"><BR/><BR/>
