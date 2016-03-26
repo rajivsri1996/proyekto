@@ -45,6 +45,13 @@ else
 <h1 align=center><font color='black' size=10><b>SEARCH EMPLOYEE</font></h1>
 
 <div id="wrap">
+<div id="menu">
+  <h3 align="center"><span class="style1"><a href="1.php">New Record</a><br>
+  <a href="7.php">UPDATE Record</a></span></h3>
+			<h3 align="center"><a href="HOMES.php"><strong>Back To Home Page</strong></a> </h3>
+			<div align="center"></div>
+</div>
+<div id="wrap">
 		<div id="menu">
 				<h3 align="center"><a href="option1.php">BACK</a> <br>
 			
